@@ -1,0 +1,55 @@
+{
+  "generated_at": null,
+  "collector_interval_minutes": 5,
+  "hospitals": [
+    {
+      "hospital_id": "credit-valley",
+      "hospital_name": "Credit Valley Hospital",
+      "city": "Mississauga",
+      "wait_minutes": null,
+      "patients_total": null,
+      "patients_waiting": null,
+      "source_name": "Trillium Health Partners",
+      "source_url": "https://www.thp.ca/patientservices/emergencycare",
+      "source_updated_at": null,
+      "retrieved_at": null,
+      "source_tier": 1,
+      "source_status": "unavailable",
+      "history": [],
+      "validation_flags": ["awaiting_first_collection"]
+    },
+    {
+      "hospital_id": "milton-district",
+      "hospital_name": "Milton District Hospital",
+      "city": "Milton",
+      "wait_minutes": null,
+      "patients_total": null,
+      "patients_waiting": null,
+      "source_name": "Halton Healthcare",
+      "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
+      "source_updated_at": null,
+      "retrieved_at": null,
+      "source_tier": 1,
+      "source_status": "unavailable",
+      "history": [],
+      "validation_flags": ["awaiting_first_collection"]
+    },
+    {
+      "hospital_id": "oakville-trafalgar",
+      "hospital_name": "Oakville Trafalgar Memorial Hospital",
+      "city": "Oakville",
+      "wait_minutes": null,
+      "patients_total": null,
+      "patients_waiting": null,
+      "source_name": "Halton Healthcare",
+      "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
+      "source_updated_at": null,
+      "retrieved_at": null,
+      "source_tier": 1,
+      "source_status": "unavailable",
+      "history": [],
+      "validation_flags": ["awaiting_first_collection"]
+    }
+  ],
+  "source_health": []
+}
