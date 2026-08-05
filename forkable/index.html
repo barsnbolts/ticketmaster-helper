@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#061115">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>ER Intelligence — Live 24H Lab</title>
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <header class="top"><div class="shell topin"><div class="brand"><b>+</b><span>ER Intelligence<small>Live 24-hour signal lab</small></span></div><div id="connection" class="pill"><i></i>Connecting</div></div></header>
+  <main class="shell">
+    <section class="hero">
+      <div><p class="eyebrow">Ontario emergency signal lab</p><h1>One day.<br><em>Every movement.</em></h1><p class="lede">A synchronized forensic view of source-reported emergency-department estimates at Credit Valley, Milton District and Oakville Trafalgar.</p></div>
+      <div class="mission"><div class="dial"><svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="43"/><circle id="progress" class="progress" cx="50" cy="50" r="43"/></svg><div><strong id="pct">0%</strong><span>complete</span></div></div><div><span class="label">Mission clock</span><strong id="clock">24:00:00</strong><small id="windowLabel">Rolling 24-hour window</small></div></div>
+    </section>
+
+    <section class="warning"><strong>!</strong><div><b>Wait estimates are not medical guidance.</b><span>Emergency departments treat the sickest patients first. Call 911 for a serious or life-threatening emergency. Do not delay care or travel farther solely because another hospital displays a shorter estimate.</span></div></section>
+
+    <section id="strip" class="strip"></section>
+
+    <section class="section"><header><div><p class="eyebrow">Live matrix</p><h2>Current source-reported estimates</h2></div><p id="matrixNote">Opening data stream…</p></header><div id="cards" class="cards"><div class="loading">Loading observations…</div></div></section>
+
+    <section class="section"><header><div><p class="eyebrow">Derived intelligence</p><h2>Signal board</h2></div><p>Observed behavior only; no clinical recommendation.</p></header><div id="signals" class="signals"></div></section>
+
+    <section class="section"><header><div><p class="eyebrow">Synchronized timeline</p><h2>All three hospitals, one clock</h2></div><p>Repeated polls of the same published value are removed.</p></header><div class="chartbox"><div id="legend" class="legend"></div><div id="chart" class="chart"><div class="loading">Trend calibration requires at least two distinct readings.</div></div></div></section>
+
+    <section class="grid2 section">
+      <article class="panel"><header><div><p class="eyebrow">Evidence log</p><h2>Events and anomalies</h2></div><p id="eventCount">0 events</p></header><div id="events" class="events"></div></article>
+      <article class="panel"><header><div><p class="eyebrow">Backend forensics</p><h2>Collection health</h2></div><p>Coverage, gaps and failures</p></header><div id="forensics"></div></article>
+    </section>
+
+    <section class="section summary"><header><div><p class="eyebrow">Mission output</p><h2>24H Intelligence Card</h2></div><button id="resetWindow">Start a fresh 24H test</button></header><div id="summary"></div></section>
+
+    <div id="error" class="error hidden"></div>
+    <footer>Independent experimental dashboard. Official hospital sources remain authoritative. Source-reported estimates are not total visit times and are not a measure of clinical capability.</footer>
+  </main>
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
