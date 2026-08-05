@@ -1,55 +1,90 @@
 {
-  "generated_at": null,
+  "generated_at": "2026-08-05T17:03:28.011074-04:00",
+  "collection_started_at": "2026-08-05T17:02:26.232300-04:00",
   "collector_interval_minutes": 5,
   "hospitals": [
     {
       "hospital_id": "credit-valley",
       "hospital_name": "Credit Valley Hospital",
       "city": "Mississauga",
-      "wait_minutes": null,
-      "patients_total": null,
-      "patients_waiting": null,
-      "source_name": "Trillium Health Partners",
-      "source_url": "https://www.thp.ca/patientservices/emergencycare",
-      "source_updated_at": null,
-      "retrieved_at": null,
-      "source_tier": 1,
-      "source_status": "unavailable",
-      "history": [],
-      "validation_flags": ["awaiting_first_collection"]
+      "wait_minutes": 264,
+      "patients_total": 109,
+      "patients_waiting": 79,
+      "source_name": "ERstat fallback",
+      "source_url": "https://erstat.ca/hospitals/on/credit-valley-hospital",
+      "source_updated_at": "2026-08-05T17:00:03-04:00",
+      "retrieved_at": "2026-08-05T17:03:28.011024-04:00",
+      "source_tier": 3,
+      "source_status": "current",
+      "raw_payload_hash": "8564ba41972dac5200b38d72e557fc2f06a37ab2149ed1b14a3bdc0e3f248a4c",
+      "validation_flags": [
+        "official_error:TimeoutError",
+        "third_party_fallback"
+      ],
+      "history": [
+        {
+          "time": "2026-08-05T17:00:03-04:00",
+          "wait_minutes": 264
+        }
+      ]
     },
     {
       "hospital_id": "milton-district",
       "hospital_name": "Milton District Hospital",
       "city": "Milton",
-      "wait_minutes": null,
-      "patients_total": null,
-      "patients_waiting": null,
+      "wait_minutes": 129,
+      "patients_total": 46,
+      "patients_waiting": 10,
       "source_name": "Halton Healthcare",
       "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
-      "source_updated_at": null,
-      "retrieved_at": null,
+      "source_updated_at": "2026-08-05T16:45:00-04:00",
+      "retrieved_at": "2026-08-05T17:02:26.490349-04:00",
       "source_tier": 1,
-      "source_status": "unavailable",
-      "history": [],
-      "validation_flags": ["awaiting_first_collection"]
+      "source_status": "current",
+      "raw_payload_hash": "71286ed6b74a63635a9b703cb23deceb90855755b17e32c22b1bd2049a4401fe",
+      "validation_flags": [],
+      "history": [
+        {
+          "time": "2026-08-05T16:45:00-04:00",
+          "wait_minutes": 129
+        }
+      ]
     },
     {
       "hospital_id": "oakville-trafalgar",
       "hospital_name": "Oakville Trafalgar Memorial Hospital",
       "city": "Oakville",
-      "wait_minutes": null,
-      "patients_total": null,
-      "patients_waiting": null,
+      "wait_minutes": 164,
+      "patients_total": 95,
+      "patients_waiting": 32,
       "source_name": "Halton Healthcare",
       "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
-      "source_updated_at": null,
-      "retrieved_at": null,
+      "source_updated_at": "2026-08-05T16:45:00-04:00",
+      "retrieved_at": "2026-08-05T17:02:26.490349-04:00",
       "source_tier": 1,
-      "source_status": "unavailable",
-      "history": [],
-      "validation_flags": ["awaiting_first_collection"]
+      "source_status": "current",
+      "raw_payload_hash": "71286ed6b74a63635a9b703cb23deceb90855755b17e32c22b1bd2049a4401fe",
+      "validation_flags": [],
+      "history": [
+        {
+          "time": "2026-08-05T16:45:00-04:00",
+          "wait_minutes": 164
+        }
+      ]
     }
   ],
-  "source_health": []
+  "source_health": [
+    {
+      "source": "Halton Healthcare",
+      "status": "ok",
+      "checked_at": "2026-08-05T17:02:26.492424-04:00",
+      "error": null
+    },
+    {
+      "source": "Trillium Health Partners",
+      "status": "error",
+      "checked_at": "2026-08-05T17:03:27.242579-04:00",
+      "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.thp.ca/emergency/A/visit.html\", waiting until \"networkidle\"\n"
+    }
+  ]
 }
