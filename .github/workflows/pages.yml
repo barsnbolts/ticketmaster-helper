@@ -39,6 +39,7 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Collect current hospital data
+        continue-on-error: true
         run: python scripts/collect.py
 
       - name: Save observation history
@@ -50,6 +51,11 @@ jobs:
             git commit -m "[skip ci] Refresh ER wait data"
             git push
           fi
+
+      - name: Add 24-hour intelligence experiment
+        run: |
+          rm -rf public/experiment
+          cp -R experiment public/experiment
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
