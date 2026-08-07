@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-07T02:20:31.918266-04:00",
-  "collection_started_at": "2026-08-07T02:19:29.212249-04:00",
+  "generated_at": "2026-08-07T03:51:01.189012-04:00",
+  "collection_started_at": "2026-08-07T03:49:58.850365-04:00",
   "collector_interval_minutes": 5,
   "hospitals": [
     {
       "hospital_id": "credit-valley",
       "hospital_name": "Credit Valley Hospital",
       "city": "Mississauga",
-      "wait_minutes": 342,
+      "wait_minutes": 444,
       "patients_total": 78,
-      "patients_waiting": 34,
+      "patients_waiting": 32,
       "source_name": "ERstat fallback",
       "source_url": "https://erstat.ca/hospitals/on/credit-valley-hospital",
-      "source_updated_at": "2026-08-07T02:20:03-04:00",
-      "retrieved_at": "2026-08-07T02:20:31.918191-04:00",
+      "source_updated_at": "2026-08-07T03:50:02-04:00",
+      "retrieved_at": "2026-08-07T03:51:01.188935-04:00",
       "source_tier": 3,
       "source_status": "current",
-      "raw_payload_hash": "d1d5cd7c2e332bfed54edc1f3e387193c2e3d6042e6859a16416e6478c87eea1",
+      "raw_payload_hash": "6b235f964c7068ba342e64d0d18357d0812599f5e99bb0657d232019c52560a2",
       "validation_flags": [
         "official_error:TimeoutError",
         "third_party_fallback"
@@ -49,6 +49,10 @@
         {
           "time": "2026-08-07T02:20:03-04:00",
           "wait_minutes": 342
+        },
+        {
+          "time": "2026-08-07T03:50:02-04:00",
+          "wait_minutes": 444
         }
       ]
     },
@@ -56,22 +60,18 @@
       "hospital_id": "milton-district",
       "hospital_name": "Milton District Hospital",
       "city": "Milton",
-      "wait_minutes": 233,
-      "patients_total": 46,
-      "patients_waiting": 15,
+      "wait_minutes": 237,
+      "patients_total": 36,
+      "patients_waiting": 8,
       "source_name": "Halton Healthcare",
       "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
-      "source_updated_at": "2026-08-07T02:01:00-04:00",
-      "retrieved_at": "2026-08-07T02:19:29.538328-04:00",
+      "source_updated_at": "2026-08-07T03:30:00-04:00",
+      "retrieved_at": "2026-08-07T03:49:59.186098-04:00",
       "source_tier": 1,
       "source_status": "current",
-      "raw_payload_hash": "9b88b5277daf59c8cc5b00221d94a143f0ff77f49a4843da87fcfcccc10c39b9",
+      "raw_payload_hash": "13161e878d8554079f59c4e6c49b1b4dced5b0b0900c7660b5d1515f37526678",
       "validation_flags": [],
       "history": [
-        {
-          "time": "2026-08-06T02:45:00-04:00",
-          "wait_minutes": 122
-        },
         {
           "time": "2026-08-06T05:15:00-04:00",
           "wait_minutes": 104
@@ -103,6 +103,10 @@
         {
           "time": "2026-08-07T02:01:00-04:00",
           "wait_minutes": 233
+        },
+        {
+          "time": "2026-08-07T03:30:00-04:00",
+          "wait_minutes": 237
         }
       ]
     },
@@ -110,22 +114,18 @@
       "hospital_id": "oakville-trafalgar",
       "hospital_name": "Oakville Trafalgar Memorial Hospital",
       "city": "Oakville",
-      "wait_minutes": 170,
-      "patients_total": 48,
+      "wait_minutes": 250,
+      "patients_total": 43,
       "patients_waiting": 15,
       "source_name": "Halton Healthcare",
       "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
-      "source_updated_at": "2026-08-07T02:01:00-04:00",
-      "retrieved_at": "2026-08-07T02:19:29.538328-04:00",
+      "source_updated_at": "2026-08-07T03:30:00-04:00",
+      "retrieved_at": "2026-08-07T03:49:59.186098-04:00",
       "source_tier": 1,
       "source_status": "current",
-      "raw_payload_hash": "9b88b5277daf59c8cc5b00221d94a143f0ff77f49a4843da87fcfcccc10c39b9",
+      "raw_payload_hash": "13161e878d8554079f59c4e6c49b1b4dced5b0b0900c7660b5d1515f37526678",
       "validation_flags": [],
       "history": [
-        {
-          "time": "2026-08-06T02:45:00-04:00",
-          "wait_minutes": 384
-        },
         {
           "time": "2026-08-06T05:15:00-04:00",
           "wait_minutes": 250
@@ -157,6 +157,10 @@
         {
           "time": "2026-08-07T02:01:00-04:00",
           "wait_minutes": 170
+        },
+        {
+          "time": "2026-08-07T03:30:00-04:00",
+          "wait_minutes": 250
         }
       ]
     }
@@ -165,13 +169,13 @@
     {
       "source": "Halton Healthcare",
       "status": "ok",
-      "checked_at": "2026-08-07T02:19:29.540292-04:00",
+      "checked_at": "2026-08-07T03:49:59.188165-04:00",
       "error": null
     },
     {
       "source": "Trillium Health Partners",
       "status": "error",
-      "checked_at": "2026-08-07T02:20:30.463628-04:00",
+      "checked_at": "2026-08-07T03:51:00.011629-04:00",
       "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.thp.ca/emergency/A/visit.html\", waiting until \"networkidle\"\n"
     }
   ]
