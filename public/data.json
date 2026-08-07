@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-07T12:37:05.064554-04:00",
-  "collection_started_at": "2026-08-07T12:36:02.284571-04:00",
+  "generated_at": "2026-08-07T13:33:35.334515-04:00",
+  "collection_started_at": "2026-08-07T13:32:32.902811-04:00",
   "collector_interval_minutes": 5,
   "hospitals": [
     {
@@ -15,9 +15,10 @@
       "source_updated_at": "2026-08-07T12:35:03-04:00",
       "retrieved_at": "2026-08-07T12:37:05.064462-04:00",
       "source_tier": 3,
-      "source_status": "current",
+      "source_status": "stale",
       "raw_payload_hash": "e46c35a65c50c86de146d1d4cdcf6db1f1d125c760588929b78633b10d55bac8",
       "validation_flags": [
+        "fallback_error:RuntimeError",
         "official_error:TimeoutError",
         "third_party_fallback"
       ],
@@ -84,16 +85,16 @@
       "hospital_id": "milton-district",
       "hospital_name": "Milton District Hospital",
       "city": "Milton",
-      "wait_minutes": 87,
+      "wait_minutes": 102,
       "patients_total": 52,
-      "patients_waiting": 18,
+      "patients_waiting": 17,
       "source_name": "Halton Healthcare",
       "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
-      "source_updated_at": "2026-08-07T12:30:00-04:00",
-      "retrieved_at": "2026-08-07T12:36:02.621707-04:00",
+      "source_updated_at": "2026-08-07T13:16:00-04:00",
+      "retrieved_at": "2026-08-07T13:32:33.384577-04:00",
       "source_tier": 1,
       "source_status": "current",
-      "raw_payload_hash": "58d363221479a825d43e8aca6e39dfc0510b4cb59aea7261b831c354bc79418e",
+      "raw_payload_hash": "c1e7642a254f3463267263d2761f7a5546144e1b80c6bbcc99340e35c590f618",
       "validation_flags": [],
       "history": [
         {
@@ -151,6 +152,10 @@
         {
           "time": "2026-08-07T12:30:00-04:00",
           "wait_minutes": 87
+        },
+        {
+          "time": "2026-08-07T13:16:00-04:00",
+          "wait_minutes": 102
         }
       ]
     },
@@ -158,16 +163,16 @@
       "hospital_id": "oakville-trafalgar",
       "hospital_name": "Oakville Trafalgar Memorial Hospital",
       "city": "Oakville",
-      "wait_minutes": 96,
-      "patients_total": 54,
-      "patients_waiting": 15,
+      "wait_minutes": 108,
+      "patients_total": 58,
+      "patients_waiting": 18,
       "source_name": "Halton Healthcare",
       "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
-      "source_updated_at": "2026-08-07T12:30:00-04:00",
-      "retrieved_at": "2026-08-07T12:36:02.621707-04:00",
+      "source_updated_at": "2026-08-07T13:16:00-04:00",
+      "retrieved_at": "2026-08-07T13:32:33.384577-04:00",
       "source_tier": 1,
       "source_status": "current",
-      "raw_payload_hash": "58d363221479a825d43e8aca6e39dfc0510b4cb59aea7261b831c354bc79418e",
+      "raw_payload_hash": "c1e7642a254f3463267263d2761f7a5546144e1b80c6bbcc99340e35c590f618",
       "validation_flags": [],
       "history": [
         {
@@ -225,6 +230,10 @@
         {
           "time": "2026-08-07T12:30:00-04:00",
           "wait_minutes": 96
+        },
+        {
+          "time": "2026-08-07T13:16:00-04:00",
+          "wait_minutes": 108
         }
       ]
     }
@@ -233,13 +242,13 @@
     {
       "source": "Halton Healthcare",
       "status": "ok",
-      "checked_at": "2026-08-07T12:36:02.623684-04:00",
+      "checked_at": "2026-08-07T13:32:33.386602-04:00",
       "error": null
     },
     {
       "source": "Trillium Health Partners",
       "status": "error",
-      "checked_at": "2026-08-07T12:37:03.487344-04:00",
+      "checked_at": "2026-08-07T13:33:34.185297-04:00",
       "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.thp.ca/emergency/A/visit.html\", waiting until \"networkidle\"\n"
     }
   ]
