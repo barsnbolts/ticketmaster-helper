@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-08T13:15:14.520480-04:00",
-  "collection_started_at": "2026-08-08T13:14:12.903665-04:00",
+  "generated_at": "2026-08-08T13:51:24.019464-04:00",
+  "collection_started_at": "2026-08-08T13:50:21.656669-04:00",
   "collector_interval_minutes": 5,
   "hospitals": [
     {
@@ -15,9 +15,10 @@
       "source_updated_at": "2026-08-08T13:15:04-04:00",
       "retrieved_at": "2026-08-08T13:15:14.520346-04:00",
       "source_tier": 3,
-      "source_status": "current",
+      "source_status": "stale",
       "raw_payload_hash": "0b68cfaf8a92c8e5ed02158375d3ba8006bc1c626b4889023268918025a86775",
       "validation_flags": [
+        "fallback_error:RuntimeError",
         "official_error:TimeoutError",
         "third_party_fallback"
       ],
@@ -136,22 +137,18 @@
       "hospital_id": "milton-district",
       "hospital_name": "Milton District Hospital",
       "city": "Milton",
-      "wait_minutes": 17,
+      "wait_minutes": 57,
       "patients_total": 33,
-      "patients_waiting": 3,
+      "patients_waiting": 6,
       "source_name": "Halton Healthcare",
       "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
-      "source_updated_at": "2026-08-08T13:01:00-04:00",
-      "retrieved_at": "2026-08-08T13:14:13.212205-04:00",
+      "source_updated_at": "2026-08-08T13:46:00-04:00",
+      "retrieved_at": "2026-08-08T13:50:22.041956-04:00",
       "source_tier": 1,
       "source_status": "current",
-      "raw_payload_hash": "28bb93cae29ef969955fca97fe592771039265b2087174c4e6341a65974900be",
+      "raw_payload_hash": "c83b7e77ed22d43b50af636e98e5306a9b3314c71c91a08386d41357fb4b1944",
       "validation_flags": [],
       "history": [
-        {
-          "time": "2026-08-07T13:16:00-04:00",
-          "wait_minutes": 102
-        },
         {
           "time": "2026-08-07T14:15:00-04:00",
           "wait_minutes": 95
@@ -267,6 +264,10 @@
         {
           "time": "2026-08-08T13:01:00-04:00",
           "wait_minutes": 17
+        },
+        {
+          "time": "2026-08-08T13:46:00-04:00",
+          "wait_minutes": 57
         }
       ]
     },
@@ -274,22 +275,18 @@
       "hospital_id": "oakville-trafalgar",
       "hospital_name": "Oakville Trafalgar Memorial Hospital",
       "city": "Oakville",
-      "wait_minutes": 106,
-      "patients_total": 58,
-      "patients_waiting": 29,
+      "wait_minutes": 126,
+      "patients_total": 55,
+      "patients_waiting": 30,
       "source_name": "Halton Healthcare",
       "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
-      "source_updated_at": "2026-08-08T13:01:00-04:00",
-      "retrieved_at": "2026-08-08T13:14:13.212205-04:00",
+      "source_updated_at": "2026-08-08T13:46:00-04:00",
+      "retrieved_at": "2026-08-08T13:50:22.041956-04:00",
       "source_tier": 1,
       "source_status": "current",
-      "raw_payload_hash": "28bb93cae29ef969955fca97fe592771039265b2087174c4e6341a65974900be",
+      "raw_payload_hash": "c83b7e77ed22d43b50af636e98e5306a9b3314c71c91a08386d41357fb4b1944",
       "validation_flags": [],
       "history": [
-        {
-          "time": "2026-08-07T13:16:00-04:00",
-          "wait_minutes": 108
-        },
         {
           "time": "2026-08-07T14:15:00-04:00",
           "wait_minutes": 156
@@ -405,6 +402,10 @@
         {
           "time": "2026-08-08T13:01:00-04:00",
           "wait_minutes": 106
+        },
+        {
+          "time": "2026-08-08T13:46:00-04:00",
+          "wait_minutes": 126
         }
       ]
     }
@@ -413,13 +414,13 @@
     {
       "source": "Halton Healthcare",
       "status": "ok",
-      "checked_at": "2026-08-08T13:14:13.214221-04:00",
+      "checked_at": "2026-08-08T13:50:22.044098-04:00",
       "error": null
     },
     {
       "source": "Trillium Health Partners",
       "status": "error",
-      "checked_at": "2026-08-08T13:15:13.874690-04:00",
+      "checked_at": "2026-08-08T13:51:22.928110-04:00",
       "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.thp.ca/emergency/A/visit.html\", waiting until \"networkidle\"\n"
     }
   ]
