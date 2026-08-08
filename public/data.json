@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-08T01:13:43.644933-04:00",
-  "collection_started_at": "2026-08-08T01:12:40.757092-04:00",
+  "generated_at": "2026-08-08T02:00:51.903912-04:00",
+  "collection_started_at": "2026-08-08T01:59:49.820486-04:00",
   "collector_interval_minutes": 5,
   "hospitals": [
     {
@@ -15,9 +15,10 @@
       "source_updated_at": "2026-08-08T01:10:03-04:00",
       "retrieved_at": "2026-08-08T01:13:43.644817-04:00",
       "source_tier": 3,
-      "source_status": "current",
+      "source_status": "stale",
       "raw_payload_hash": "24928b0794718567ff1aac7350f481859dc9f49e02b284fe5ef040788cccb64a",
       "validation_flags": [
+        "fallback_error:RuntimeError",
         "official_error:TimeoutError",
         "third_party_fallback"
       ],
@@ -116,19 +117,17 @@
       "hospital_id": "milton-district",
       "hospital_name": "Milton District Hospital",
       "city": "Milton",
-      "wait_minutes": 242,
-      "patients_total": 39,
-      "patients_waiting": 23,
+      "wait_minutes": 252,
+      "patients_total": 35,
+      "patients_waiting": 20,
       "source_name": "Halton Healthcare",
       "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
-      "source_updated_at": "2026-08-08T00:46:00-04:00",
-      "retrieved_at": "2026-08-08T01:12:41.094876-04:00",
+      "source_updated_at": "2026-08-08T01:46:00-04:00",
+      "retrieved_at": "2026-08-08T01:59:50.127085-04:00",
       "source_tier": 1,
-      "source_status": "delayed",
-      "raw_payload_hash": "e113d62df18ae436c6173789a8c8dde4e8b8104d67ef2c8265c732839610b645",
-      "validation_flags": [
-        "delayed_source"
-      ],
+      "source_status": "current",
+      "raw_payload_hash": "5915b20ba39a18a03624a111dbdb6e9d1f854b22004b1a64998a72f54c1a694e",
+      "validation_flags": [],
       "history": [
         {
           "time": "2026-08-07T02:01:00-04:00",
@@ -225,6 +224,10 @@
         {
           "time": "2026-08-08T00:46:00-04:00",
           "wait_minutes": 242
+        },
+        {
+          "time": "2026-08-08T01:46:00-04:00",
+          "wait_minutes": 252
         }
       ]
     },
@@ -232,19 +235,17 @@
       "hospital_id": "oakville-trafalgar",
       "hospital_name": "Oakville Trafalgar Memorial Hospital",
       "city": "Oakville",
-      "wait_minutes": 211,
-      "patients_total": 63,
-      "patients_waiting": 29,
+      "wait_minutes": 263,
+      "patients_total": 50,
+      "patients_waiting": 23,
       "source_name": "Halton Healthcare",
       "source_url": "https://www.haltonhealthcare.on.ca/emergency-department",
-      "source_updated_at": "2026-08-08T00:46:00-04:00",
-      "retrieved_at": "2026-08-08T01:12:41.094876-04:00",
+      "source_updated_at": "2026-08-08T01:46:00-04:00",
+      "retrieved_at": "2026-08-08T01:59:50.127085-04:00",
       "source_tier": 1,
-      "source_status": "delayed",
-      "raw_payload_hash": "e113d62df18ae436c6173789a8c8dde4e8b8104d67ef2c8265c732839610b645",
-      "validation_flags": [
-        "delayed_source"
-      ],
+      "source_status": "current",
+      "raw_payload_hash": "5915b20ba39a18a03624a111dbdb6e9d1f854b22004b1a64998a72f54c1a694e",
+      "validation_flags": [],
       "history": [
         {
           "time": "2026-08-07T02:01:00-04:00",
@@ -341,6 +342,10 @@
         {
           "time": "2026-08-08T00:46:00-04:00",
           "wait_minutes": 211
+        },
+        {
+          "time": "2026-08-08T01:46:00-04:00",
+          "wait_minutes": 263
         }
       ]
     }
@@ -349,13 +354,13 @@
     {
       "source": "Halton Healthcare",
       "status": "ok",
-      "checked_at": "2026-08-08T01:12:41.096697-04:00",
+      "checked_at": "2026-08-08T01:59:50.129774-04:00",
       "error": null
     },
     {
       "source": "Trillium Health Partners",
       "status": "error",
-      "checked_at": "2026-08-08T01:13:41.957189-04:00",
+      "checked_at": "2026-08-08T02:00:50.895770-04:00",
       "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.thp.ca/emergency/A/visit.html\", waiting until \"networkidle\"\n"
     }
   ]
